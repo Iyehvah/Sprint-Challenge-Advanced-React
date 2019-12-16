@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import Display from './Components/Display';
-
+import DarkModeSwitch from './Components/DarkModeSwitch';
 
 class App extends Component {
   constructor() {
@@ -38,6 +38,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
+        <DarkModeSwitch />
         <Display players={this.state.players}/>
       </div>
 

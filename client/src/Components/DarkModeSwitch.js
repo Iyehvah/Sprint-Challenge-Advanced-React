@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDarkMode } from '../Hook/UseDarkMode';
+import useDarkMode from './Hook/useDarkMode';
 
 const DarkModeSwitch = () => {
     const [darkMode, setDarkMode] = useDarkMode('darkMode', false);
@@ -10,8 +10,8 @@ const DarkModeSwitch = () => {
     }
 
     return (
-        <div onClick={toggleDarkMode}>
-
+        <div>
+            <button onClick={toggleDarkMode}>DarkMode</button>
         </div>
     )
 }
