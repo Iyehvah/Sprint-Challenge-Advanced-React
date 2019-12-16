@@ -1,10 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import App from './App';
-import {render} from "react-testing-library";
-import * as rtl from 'react-testing-library';
+import { render, fireEvent } from '@testing-library/react';
+describe("Does the app render?" , () => {
+    test('renders', () => {
+        render(<App />);
+      }); 
+});
 
-// it("Renders without crashing" , () => {
-//     const container = rtl.render(
-//         <App />
-//     );
-// });
