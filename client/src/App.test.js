@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+import { render, fireEvent } from '@testing-library/react';
+describe("Does the app render?" , () => {
+    test('renders', () => {
+        render(<App />);
+      }); 
 });
+
